@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vast</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --text: #e5e7eb;
+      --brand: #6d28d9;
+      --muted: #9aa4bf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+      background: #0b1020;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #0b1020cc;
+      border-bottom: 1px solid #ffffff14;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 0.3px;
+    }
+
+    .nav ul {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      padding: 48px 0;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 5vw, 44px);
+    }
+
+    .lead {
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    section {
+      padding: 40px 0;
+      border-top: 1px solid #ffffff10;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+    }
+
+    .cards {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      border: 1px solid #ffffff14;
+      border-radius: 12px;
+      padding: 12px;
+      background: #0e1530;
+    }
+
+    .price {
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    footer {
+      border-top: 1px solid #ffffff10;
+      padding: 16px 0;
+      color: #a3a3a3;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #ffffff22;
+    }
+
+    .primary {
+      background: linear-gradient(135deg, #6d28d9, #4c1d95);
+      color: #fff;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">Vast</div>
+      <ul>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Vast Visions — AR Glasses</h1>
+        <p class="lead">Lightweight augmented reality for everyday work and play.</p>
+        <a class="btn primary" href="#pricing">See pricing</a>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="wrap">
+        <h2>Product</h2>
+        <p>Vast Visions are sleek AR glasses that overlay apps, navigation and calls into your field of view. Works with iOS, Android, macOS and Windows.</p>
+        <div class="cards">
+          <div class="card"><strong>Display:</strong> micro-OLED, 55° FOV</div>
+          <div class="card"><strong>Input:</strong> voice, eye-tracking, pinch</div>
+          <div class="card"><strong>Audio:</strong> open-ear + beamforming mics</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About</h2>
+        <p>Vast builds human-first spatial computing. Our mission is simple: make AR useful, comfortable and private by design.</p>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <h2>Pricing</h2>
+        <!-- Add your pricing content here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2025 Vast Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
